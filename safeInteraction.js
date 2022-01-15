@@ -260,7 +260,7 @@ const safeAddress = "0x12050F7090cb2a1620dA2cb8651489675394D0B8";
 let erc20Address = "0x448de722BD3b081F97131De6987a9E1f6b3dd87f"
 
 const safeConnection = await Safe.default.create({ ethAdapter, safeAddress });
-const safeConnection2 = await Safe.default.create	;
+const safeConnection2 = await Safe.default.create({ ethAdapterethAdapter2, safeAddress });
 let cInstance= new tempWeb3.eth.Contract(abi,erc20Address);
 let funcAbi = await cInstance.methods._mint("0x0f561eF8a55137bE95bCbF60B34d9b22634B91FA",web3.utils.toWei('2','ether')).encodeABI();
 //function _mint(address account, uint256 amount) public whiteListOnly
